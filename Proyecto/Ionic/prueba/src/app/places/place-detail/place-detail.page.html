@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start" defaultHref="/places"></ion-back-button>
+    <ion-title>Maravilla: {{place.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+<ion-grid class="ion-no-padding">
+  <ion-row class="ion-no-padding">
+    <ion-col class="ion-no-padding">
+      <ion-img [src]="place.img">
+      </ion-img>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-text-center">
+    <ion-col>
+      <h1>{{place.name}}</h1>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="ion-padding">
+      {{place.desc}}
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

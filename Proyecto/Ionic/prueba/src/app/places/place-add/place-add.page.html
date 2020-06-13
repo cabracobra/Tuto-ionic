@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-back-button slot="start" defaultHref="/places"></ion-back-button>
+    <ion-title>Añadir nueva maravilla</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-row>
+  <ion-col>
+    <ion-card>
+      <ion-card-content>
+        <ion-input type="text" placeholder="Escribe un titulo" #title></ion-input>
+        <ion-input type="text" placeholder="http://img-website.com" #imgURL></ion-input>
+          <ion-input type="text" placeholder="Escribe una descripción"#description></ion-input>
+          <ion-button (click)="saveNewPlace(title,imgURL,description)">
+            Guardar
+          </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+</ion-row>
+</ion-content>
